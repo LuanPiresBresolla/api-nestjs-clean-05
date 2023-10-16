@@ -4,6 +4,7 @@ import { QuestionsRepository } from '@/domain/forum/application/repositories/que
 import { Question } from '@/domain/forum/enterprise/entities/question'
 import { QuestionAttachment } from '@/domain/forum/enterprise/entities/question-attachment'
 import { QuestionAttachmentList } from '@/domain/forum/enterprise/entities/question-attachment-list'
+import { Injectable } from '@nestjs/common'
 
 interface Request {
   authorId: string
@@ -19,6 +20,7 @@ type Response = Either<
   }
 >
 
+Injectable()
 export class CreateQuestionUseCase {
   constructor(private questionsRepository: QuestionsRepository) {}
 
