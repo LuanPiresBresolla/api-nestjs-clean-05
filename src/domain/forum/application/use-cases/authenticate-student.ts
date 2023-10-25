@@ -1,7 +1,7 @@
 import { Either, left, right } from '@/core/either'
 import { Encrypter } from '@/domain/forum/application/cryptography/encrypter'
 import { HasheComparer } from '@/domain/forum/application/cryptography/hash-comparer'
-import { StudentsRepository } from '@/domain/forum/application/repositories/students-repositoryt'
+import { StudentsRepository } from '@/domain/forum/application/repositories/students-repository'
 import { WrongCredentialsError } from '@/domain/forum/application/use-cases/errors/wrong-credentials-error'
 import { Injectable } from '@nestjs/common'
 
